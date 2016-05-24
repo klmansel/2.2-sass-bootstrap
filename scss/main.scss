@@ -1,0 +1,10 @@
+//Bootstrap Variables
+$icon-font-path: '../bower_components/bootstrap-sass/assets/stylesheets/fonts/bootstrap';
+//Install Bootstrap
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+$color: #9b4a3c;
+
+body {
+  background-color: $color;
+}
