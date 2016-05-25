@@ -17,7 +17,7 @@ $dark-red: #a22e37;
   background-image: url('../images/skateboard-images/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px; //remove this when page is complete
+   //remove this when page is complete
   max-width: 100%;
 }
 //Top Right-Social//
@@ -88,6 +88,7 @@ $dark-red: #a22e37;
   background-image: url('../images/skateboard-images/top-image.png');
   background-size: cover;
   border: 10px solid $white;
+  margin-top: 20px;
   overflow: hidden;
 }
 
@@ -111,6 +112,8 @@ $dark-red: #a22e37;
     font-size: 18px;
     text-align: justify;
     }
+
+
 }
 
 .date {
@@ -119,33 +122,66 @@ $dark-red: #a22e37;
 
 .news {
   background-color: $white;
-}
 
-.more {
+  width: 33.3333%;
+
+
   a {
     color: $dark-red;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
 
+
     &:visited {
       color: $gold;
-  }
-}
+      }
+     }
 }
 
 //Skateboard Pics
 
 .skateboards {
   display: inline-block;
+  margin: 30px;
   max-width: 972px;
 
 
   img {
     display: inline-block;
+    padding-left: 20px;
 
     @media(max-width:750px){
       transform: rotate(90deg);
   }
 }
+}
+
+.sk8box {
+  background-color: $white;
+}
+//Footer
+.end {
+  // background-color: $white;
+  background-color: $white;
+  max-width: 100%;
+
+  img {
+    height: 20px;
+    width: 20px;
+    }
+}
+
+.contact {
+  background-color: $white;
+  display: inline;
+
+
+  p {
+    line-height: 30px;
+    }
+}
+
+.my-form {
+  margin-top: 30px;
 }

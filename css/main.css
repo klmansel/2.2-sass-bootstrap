@@ -5813,7 +5813,6 @@ button.close {
   background-image: url("../images/skateboard-images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
   max-width: 100%; }
 
 .social {
@@ -5863,6 +5862,7 @@ button.close {
   background-image: url("../images/skateboard-images/top-image.png");
   background-size: cover;
   border: 10px solid #fbfbfb;
+  margin-top: 20px;
   overflow: hidden; }
 
 .dots {
@@ -5883,23 +5883,44 @@ button.close {
   color: #7f7e7c; }
 
 .news {
-  background-color: #fbfbfb; }
-
-.more a {
-  color: #a22e37;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center; }
-  .more a:visited {
-    color: #e9ca45; }
+  background-color: #fbfbfb;
+  width: 33.3333%; }
+  .news a {
+    color: #a22e37;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center; }
+    .news a:visited {
+      color: #e9ca45; }
 
 .skateboards {
   display: inline-block;
+  margin: 30px;
   max-width: 972px; }
   .skateboards img {
-    display: inline-block; }
+    display: inline-block;
+    padding-left: 20px; }
     @media (max-width: 750px) {
       .skateboards img {
         transform: rotate(90deg); } }
+
+.sk8box {
+  background-color: #fbfbfb; }
+
+.end {
+  background-color: #fbfbfb;
+  max-width: 100%; }
+  .end img {
+    height: 20px;
+    width: 20px; }
+
+.contact {
+  background-color: #fbfbfb;
+  display: inline; }
+  .contact p {
+    line-height: 30px; }
+
+.my-form {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */
