@@ -5809,7 +5809,86 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  background-color: #9b4a3c; }
+.wrapper {
+  background-image: url("../images/skateboard-images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  max-width: 100%; }
+
+.social {
+  display: inline-block;
+  width: 500px; }
+  .social h5 {
+    color: #7f7e7c;
+    float: left;
+    font-style: Helvetica, sans-serif;
+    margin-right: 40px;
+    padding: 0;
+    word-spacing: 10px; }
+  .social img {
+    border-bottom: 5px solid #7f7e7c;
+    float: left;
+    height: 30px;
+    margin-right: 3px;
+    width: 30px; }
+  .social span {
+    color: #7f7e7c;
+    display: inline-block;
+    float: left;
+    transform: rotate(90deg);
+    transform-origin: 0; }
+  .social a {
+    color: #7f7e7c;
+    text-decoration: none; }
+    .social a:hover {
+      color: #e9ca45; }
+
+.clearfix {
+  clear: both; }
+
+.top-nav a {
+  background-color: #b12b32;
+  border-bottom: 5px solid #7f7e7c;
+  color: #fbfbfb;
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  width: 100%; }
+  .top-nav a:hover {
+    color: #e9ca45; }
+
+.top {
+  background-image: url("../images/skateboard-images/top-image.png");
+  background-size: cover;
+  border: 10px solid #fbfbfb;
+  overflow: hidden; }
+
+.dots {
+  color: #fbfbfb;
+  display: inline;
+  font-size: 50px;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: center; }
+
+.stories h3 {
+  font-weight: bold; }
+.stories p {
+  font-size: 18px;
+  text-align: justify; }
+
+.date {
+  color: #7f7e7c; }
+
+.more a {
+  color: #a22e37;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center; }
+
+.news {
+  background-color: #fbfbfb; }
 
 /*# sourceMappingURL=main.css.map */

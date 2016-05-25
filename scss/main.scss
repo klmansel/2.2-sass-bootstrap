@@ -1,10 +1,131 @@
 //Bootstrap Variables
 $icon-font-path: '../bower_components/bootstrap-sass/assets/stylesheets/fonts/bootstrap';
+$white: #fbfbfb;
+$red: #b12b32;
+$border-grey: rgb(127, 126, 124);
+$black: #000;
+$gold: #e9ca45;
+$text-grey: #a8a848;
+$dark-red: #a22e37;
+
 //Install Bootstrap
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
-$color: #9b4a3c;
 
-body {
-  background-color: $color;
+
+.wrapper {
+  background-image: url('../images/skateboard-images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px; //remove this when page is complete
+  max-width: 100%;
+}
+//Top Right-Social//
+.social {
+  display: inline-block;
+  width: 500px;
+
+
+  h5 {
+    color: $border-grey;
+    float: left;
+    font-style: Helvetica, sans-serif;
+    margin-right: 40px;
+    padding: 0;
+    word-spacing: 10px;
+  }
+
+  img {
+    border-bottom: 5px solid $border-grey;
+    float: left;
+    height: 30px;
+    margin-right: 3px;
+    width: 30px;
+
+}
+
+  span {
+    color: $border-grey;
+    display: inline-block;
+    float: left;
+    transform: rotate(90deg);
+    transform-origin: 0;
+}
+
+  a {
+    color: $border-grey;
+    text-decoration: none;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+//Top Navigation Bar//
+.top-nav {
+
+  a {
+    background-color: $red;
+    border-bottom: 5px solid $border-grey;
+    color: $white;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+//Top Photo
+.top {
+  background-image: url('../images/skateboard-images/top-image.png');
+  background-size: cover;
+  border: 10px solid $white;
+  overflow: hidden;
+}
+
+.dots {
+  color: $white;
+  display: inline;
+  font-size: 50px;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+.stories {
+
+  h3 {
+    font-weight: bold;
+    }
+
+  p {
+    font-size: 18px;
+    text-align: justify;
+    }
+}
+
+.date {
+  color: $border-grey;
+}
+
+.more {
+
+  a {
+    color: $dark-red;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.news {
+  background-color: $white;
 }
