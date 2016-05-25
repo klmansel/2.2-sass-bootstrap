@@ -5882,13 +5882,24 @@ button.close {
 .date {
   color: #7f7e7c; }
 
+.news {
+  background-color: #fbfbfb; }
+
 .more a {
   color: #a22e37;
   font-size: 25px;
   font-weight: bold;
   text-align: center; }
+  .more a:visited {
+    color: #e9ca45; }
 
-.news {
-  background-color: #fbfbfb; }
+.skateboards {
+  display: inline-block;
+  max-width: 972px; }
+  .skateboards img {
+    display: inline-block; }
+    @media (max-width: 750px) {
+      .skateboards img {
+        transform: rotate(90deg); } }
 
 /*# sourceMappingURL=main.css.map */
