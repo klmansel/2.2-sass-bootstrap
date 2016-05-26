@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5821,8 +5822,7 @@ button.close {
   .social h5 {
     color: #7f7e7c;
     float: left;
-    font-style: Helvetica, sans-serif;
-    margin-right: 40px;
+    font-family: "Fjalla One", sans-serif;
     padding: 0;
     word-spacing: 10px; }
   .social img {
@@ -5852,6 +5852,7 @@ button.close {
   color: #fbfbfb;
   display: inline-block;
   float: left;
+  font-family: "Fjalla One", sans-serif;
   font-size: 18px;
   text-align: center;
   width: 100%; }
@@ -5869,6 +5870,7 @@ button.close {
   color: #fbfbfb;
   display: inline;
   font-size: 50px;
+  margin: 0;
   padding-bottom: 0;
   padding-top: 0;
   text-align: center; }
@@ -5884,19 +5886,19 @@ button.close {
 
 .news {
   background-color: #fbfbfb;
+  margin-bottom: 60px;
   width: 33.3333%; }
   .news a {
     color: #a22e37;
     font-size: 25px;
     font-weight: bold;
     text-align: center; }
-    .news a:visited {
+    .news a:hover {
       color: #e9ca45; }
 
 .skateboards {
   display: inline-block;
-  margin: 30px;
-  max-width: 972px; }
+  max-width: 100%; }
   .skateboards img {
     display: inline-block;
     padding-left: 20px; }
@@ -5914,6 +5916,76 @@ button.close {
     height: 20px;
     width: 20px; }
 
+.arrow {
+  background-color: #9a2d31;
+  border: 1px solid #9a2d31;
+  color: #fbfbfb;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100px;
+  padding-top: 40px;
+  position: relative;
+  width: 128px; }
+  @media (max-width: 750px) {
+    .arrow {
+      display: none; } }
+
+.arrow::after {
+  border: 50px solid transparent;
+  border-left: 12px solid #9a2d31;
+  content: '';
+  height: 0;
+  left: 128px;
+  position: absolute;
+  top: 0;
+  width: 0; }
+
+.arrow::before {
+  border: 50px solid transparent;
+  border-left: 12px solid #9a2d31;
+  content: '';
+  height: 0;
+  left: 129px;
+  position: absolute;
+  top: 0;
+  width: 0; }
+
+.skater1, .skater4, .skater3, .skater2 {
+  background-image: url("../images/skateboard-images/sk8er-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid #fbfbfb;
+  color: #fbfbfb;
+  display: inline-block;
+  float: left;
+  height: 326px;
+  text-decoration: none; }
+  @media (max-width: 750px) {
+    .skater1, .skater4, .skater3, .skater2 {
+      width: 100%; } }
+  .skater1 a, .skater4 a, .skater3 a, .skater2 a {
+    color: #fbfbfb;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 44px;
+    text-decoration: none; }
+    .skater1 a:hover, .skater4 a:hover, .skater3 a:hover, .skater2 a:hover {
+      color: #b12b32; }
+
+.skater4 {
+  background-image: url("../images/skateboard-images/sk8er-4.png");
+  background-position: right; }
+
+.skater3 {
+  background-image: url("../images/skateboard-images/sk8er-3.png"); }
+
+.skater2 {
+  background-image: url("../images/skateboard-images/sk8er-2.png");
+  background-position: right; }
+  @media (min-width: 750px) {
+    .skater2 {
+      height: 752px; } }
+
 .contact {
   background-color: #fbfbfb;
   display: inline; }
@@ -5921,6 +5993,8 @@ button.close {
     line-height: 30px; }
 
 .my-form {
+  display: inline;
+  height: 200px;
   margin-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */

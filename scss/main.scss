@@ -7,7 +7,10 @@ $black: #000;
 $gold: #e9ca45;
 $text-grey: #a8a848;
 $dark-red: #a22e37;
+$arrow: #9a2d31;
+$skate-font: "Fjalla One", sans-serif;
 
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 //Install Bootstrap
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
@@ -29,8 +32,7 @@ $dark-red: #a22e37;
   h5 {
     color: $border-grey;
     float: left;
-    font-style: Helvetica, sans-serif;
-    margin-right: 40px;
+    font-family: $skate-font;
     padding: 0;
     word-spacing: 10px;
   }
@@ -74,6 +76,7 @@ $dark-red: #a22e37;
     color: $white;
     display: inline-block;
     float: left;
+    font-family: $skate-font;
     font-size: 18px;
     text-align: center;
     width: 100%;
@@ -96,6 +99,7 @@ $dark-red: #a22e37;
   color: $white;
   display: inline;
   font-size: 50px;
+  margin: 0;
   padding-bottom: 0;
   padding-top: 0;
   text-align: center;
@@ -122,7 +126,7 @@ $dark-red: #a22e37;
 
 .news {
   background-color: $white;
-
+  margin-bottom: 60px;
   width: 33.3333%;
 
 
@@ -133,7 +137,7 @@ $dark-red: #a22e37;
     text-align: center;
 
 
-    &:visited {
+    &:hover {
       color: $gold;
       }
      }
@@ -143,16 +147,16 @@ $dark-red: #a22e37;
 
 .skateboards {
   display: inline-block;
-  margin: 30px;
-  max-width: 972px;
+  max-width: 100%;
 
 
   img {
     display: inline-block;
     padding-left: 20px;
 
-    @media(max-width:750px){
+    @media(max-width: 750px){
       transform: rotate(90deg);
+
   }
 }
 }
@@ -171,7 +175,102 @@ $dark-red: #a22e37;
     width: 20px;
     }
 }
+//Arrow
+.arrow {
+  background-color: $arrow;
+  border: 1px solid $arrow;
+  color: $white;
+  font-family: $skate-font;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100px;
+  padding-top: 40px;
+  position: relative;
+  width: 128px;
 
+  @media(max-width: 750px){
+    display: none;
+  }
+  }
+
+.arrow::after {
+  border: 50px solid transparent;
+  border-left: 12px solid $arrow;
+  content: '';
+  height: 0;
+  left: 128px;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.arrow::before {
+  border: 50px solid transparent;
+  border-left: 12px solid $arrow;
+  content: '';
+  height: 0;
+  left: 129px;
+  position: absolute;
+  top: 0;
+  width: 0;
+  }
+//Skateboarders-People
+//Steve
+.skater1 {
+  background-image: url('../images/skateboard-images/sk8er-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid $white;
+  color: $white;
+  display: inline-block;
+  float: left;
+  height: 326px;
+  text-decoration: none;
+
+  @media(max-width: 750px){
+    width: 100%;
+  }
+
+  a {
+    color: $white;
+    font-family: $skate-font;
+    font-size: 44px;
+    text-decoration: none;
+
+    &:hover {
+      color: $red;
+    }
+
+  }
+}
+
+//Lance
+.skater4 {
+  @extend .skater1;
+  background-image: url('../images/skateboard-images/sk8er-4.png');
+  background-position: right;
+
+}
+
+
+.skater3 {
+  @extend .skater1;
+  background-image: url('../images/skateboard-images/sk8er-3.png');
+}
+
+.skater2 {
+
+  @extend .skater1;
+  background-image: url('../images/skateboard-images/sk8er-2.png');
+  background-position: right;
+
+  @media(min-width: 750px){
+    height: 752px;
+  }
+
+}
+
+//Footer-Contact Info
 .contact {
   background-color: $white;
   display: inline;
@@ -182,6 +281,9 @@ $dark-red: #a22e37;
     }
 }
 
+
 .my-form {
+  display: inline;
+  height: 200px;
   margin-top: 30px;
 }
