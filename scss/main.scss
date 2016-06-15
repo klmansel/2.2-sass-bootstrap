@@ -1,3 +1,4 @@
+
 //Bootstrap Variables
 $icon-font-path: '../bower_components/bootstrap-sass/assets/stylesheets/fonts/bootstrap';
 $white: #fbfbfb;
@@ -141,8 +142,11 @@ $skate-font: "Fjalla One", sans-serif;
       color: $gold;
       }
      }
-}
 
+  @media(max-width: 750px){
+    width: 80%;
+  }
+}
 //Skateboard Pics
 
 .skateboards {
@@ -190,7 +194,7 @@ $skate-font: "Fjalla One", sans-serif;
 
   @media(max-width: 750px){
     display: none;
-  }
+    }
   }
 
 .arrow::after {
@@ -244,6 +248,11 @@ $skate-font: "Fjalla One", sans-serif;
   }
 }
 
+.stevec {
+  position: relative;
+  bottom: 400px;
+  width: 650px;
+}
 //Lance
 .skater4 {
   @extend .skater1;
